@@ -8,5 +8,9 @@ minibox.style.position = "absolute"
 minibox.style.top= "50px"
 minibox.style.left= "200px"
 minibox.style.border= "5px solid red"
+minibox.style.padding= "2px"
+minibox.style.zIndex = "1000000"
+minibox.addEventListener("click",() => { minibox.style.display = "none"})
+
 
 
