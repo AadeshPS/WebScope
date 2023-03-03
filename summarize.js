@@ -10,7 +10,10 @@ minibox.style.left= "200px"
 minibox.style.border= "5px solid red"
 minibox.style.padding= "2px"
 minibox.style.zIndex = "1000000"
-minibox.addEventListener("click",() => { minibox.style.display = "none"})
+minibox.addEventListener("click",() => { minibox.style.display = "none";
+var pathname = window.location.href;
+console.log(pathname);
+})
 
 
 
