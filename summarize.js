@@ -1,5 +1,5 @@
 var minibox = document.createElement("div")
-var par = document.textContent("you are on fire")
+var par = document.createTextNode("you are on fire")
 minibox.appendChild(par)
 document.body.appendChild(minibox)
 
