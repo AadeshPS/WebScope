@@ -11,9 +11,16 @@ minibox.style.border= "5px solid red"
 minibox.style.padding= "2px"
 minibox.style.zIndex = "1000000"
 minibox.addEventListener("click",() => { minibox.style.display = "none";
+
+
+
+//getting the url of the current page
 var pathname = window.location.href;
-console.log(pathname);
+var input = pathname.split("?");
+var ans = input[0];
+console.log(ans);
 })
+
 
 
 
