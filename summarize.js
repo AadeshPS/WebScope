@@ -52,11 +52,16 @@ for (let i = 0; i < aElements.length; i++) {
 
 }
 
+
+
+
 // getting the url of the current page
 // var pathname = window.location.href;
 // var input = pathname.split("?");
 // var ans = input[0];
 // console.log(ans);
 })
+
+
 
 
