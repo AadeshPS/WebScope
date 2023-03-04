@@ -13,48 +13,44 @@ minibox.style.zIndex = "1000000"
 minibox.addEventListener("click",() => { minibox.style.display = "none";
 
 //number of words on the webpage
-// var num_para = document.getElementsByTagName("p");
-// var sum_words = 0;
-// for (var i = 0; i<para_content.length;i++)
-// {
-//     var par_portion = num_para[i].textContent;
-//     var words = par_portion.split(" ");
-//     var num_of_words = words.length;
-//     sum_words += num_of_words
+ var num_para = document.getElementsByTagName("p");
+ var sum_words = 0;
+ for (var i = 0; i<num_para.length;i++)
+ {
+    var par_portion = num_para[i].textContent;
+    var words = par_portion.split(" ");
+    var num_of_words = words.length;
+    sum_words += num_of_words
     
-
-// }
-// var reading_time = parseInt(sum_words/238);//taking the average reading time is 238 words per minute
-// console.log(reading_time + " min is the average reading time");
-
-var num_para = document.getElementsByTagName("cite");
-var sum_words = 0;
-
-for (let i = 0; i<num_para.length;i++)
-
-{
-    var url_ = "";
-    var cite_ = num_para[i].textContent;
-    var link_ = cite_.split(" › ");
-    console.log(link_);
-    for (let index = 0; index < link_.length; index++) {
-         if (index === 0)
-         {
-            url_ = url_ + link_[index];
-            console.log(url_)
-         }
-         else
-         {
-            url_ = url_ + "/" + link_[index];
-         }
-        
-    }
-
-    console.log(url_);
 
 }
 var reading_time = parseInt(sum_words/238);//taking the average reading time is 238 words per minute
 console.log(reading_time + " min is the average reading time");
+
+//getting all the links from google.com from the cite tag
+
+    
+const aElements = document.getElementsByTagName('a');
+
+for (let i = 0; i < aElements.length; i++) {
+  let aElement = aElements[i];
+  let citeAttribute = aElement.getElementsByTagName('cite')[0];
+  
+  if (citeAttribute) {
+    let _link = aElement.getAttribute('href')
+    if (_link)
+    {
+        var mini = document.createElement("div");
+        mini.style.height = "10px"
+        mini.style.width = "10px"
+        mini.style.backgroundColor = "red";
+        aElement.appendChild(mini);
+    }
+    console.log(_link)
+  }
+
+
+}
 
 // getting the url of the current page
 // var pathname = window.location.href;
