@@ -1,3 +1,7 @@
+//import { pageinfo } from "/pageinfo.js";
+if( 'function' === typeof importScripts) {
+  importScripts('pageinfo.js');
+}
 var minibox = document.createElement("div")
 var par = document.createTextNode("you are on fire")
 minibox.appendChild(par)
@@ -31,13 +35,15 @@ console.log(reading_time + " min is the average reading time");
 
     
 const aElements = document.getElementsByTagName('a');
-
+const num = pageinfo();
+console.log(num);
 for (let i = 0; i < aElements.length; i++) {
   let aElement = aElements[i];
   let citeAttribute = aElement.getElementsByTagName('cite')[0];
   
   if (citeAttribute) {
     let _link = aElement.getAttribute('href')
+    //get_data(_link);
     if (_link)
     {
         var mini = document.createElement("div");
