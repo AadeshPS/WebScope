@@ -1,5 +1,5 @@
 {
-    "manifest_version":2,
+    "manifest_version":3,
     "name":"Border",
     "version":"1.0",
 
@@ -8,11 +8,20 @@
     "icons":{
         "48":"icons/border-48.png"
     },
-
+ 
     "content_scripts":[
         {
             "matches":["<all_urls>"],
-            "js":["summarize.js"]
+            "js":["summarize.js","pageinfo.js"]
         }
-    ]
+    ],
+    "background": {
+        "scripts" : [
+            "summarize.js",
+            "pageinfo.js"
+        ]
+    }
+
+    
+ 
 }
