@@ -5,36 +5,53 @@
     font-family: 'Trebuchet MS', sans-serif;
 }
 .main{
-    border-color: red;
-    border-radius: 10%;
-    padding:5px,30px;
-    background: whitegit;
-   
-    position:relative;
-    top:20px;
-    left:1200px;
-    width:200px;
-    height:300px;
+    padding: 5px,30px;
+    background: white;
+    position: relative;
+    top: 20px;
+    left: 1200px;
+    width: 237px;
+    height: 341px;
+    box-shadow: 5px 4px 2px  grey;
     
     
+    
+}
+.main::after{
+    content: '';
+    position: absolute;
+    background-color: grey;
+    left:-2px;
+    right:-2px;
+    top:-2px;
+    bottom:-2px;
+    z-index:-2;
+    /* filter: blur(10px); */
+    /* animation:animate 2s ease forwards */
+
 }
 .main::before{
     content: '';
     position: absolute;
-    background-color: green;
+    background-color: grey;
     left:-2px;
     right:-2px;
     top:-2px;
     bottom:-2px;
     z-index:-3;
-    filter: blur(10px);
+
 }
 .read{
-    color:#1E1C34;
-    text-shadow: #2e2963 1px 0 10px;
-    position:absolute;
-    top: 40px;
-    left:18px;
+    color: #1E1C34;
+    position: absolute;
+    top: 30px;
+    left: 18px;
+
+    border-radius: 6%;
+    width: 110px;
+    height: 25px;
+   
+    
 
 }
 .p{
@@ -42,26 +59,84 @@
 }
 
 .link{
-    position:absolute;
-    top:100px;
-    left:18px;
+    position: absolute;
+    top: 139px;
+    left: 18px;
+    border-radius: 6%;
+    width: 145px;
+    height: 25px;
+    
 }
 .heading{
-    position:absolute;
-    top:160px;
-    left:18px;
+    position: absolute;
+    top: 243px;
+    left: 18px;
+    border-radius: 6%;
+    width: 143px;
+    height: 23px;
+    
 }
 .right{
-    position:absolute;
-    left:120px;
-    top:25px;
+    position: absolute;
+    left: 66px;
+    top: 33px;
+    font-weight: bold;
+    font-size: 40px;
+    color:green;
 }
 .right1{
-    position:absolute;
-    left:120px;
-    top:25px;
+    position: absolute;
+    left: 65px;
+    top: 31px;
+    font-weight: bold;
+    font-size: 40px;
+    color:red;
 }
+
 .list{
-    position:absolute;
-    top:25px;
+    position:relative;
+    top:10px;
+    left:15px;
+}
+.reading-time{
+    position:relative;
+    left:6px;
+    top:2px;
+}
+.scope-reading{
+    position:relative;
+    left:6px;
+    top:3px;
+    
+}
+.primary{
+    text-align: center;
+}
+.min{
+    position:relative;
+    font-size: 20px;
+    top:60px;
+    left:75px;
+}
+.links{
+    position:relative;
+    font-size: 20px;
+    top:55px;
+    left:71px;
+
+}
+@keyframes animate{
+    0%{
+        filter:blur(5px);
+    }
+    25%{
+        filter:blur(10px);
+    }
+    50%{
+        filter:blur(15px);
+    }
+    100%{
+        filter:blur(20px);
+    }
+
 }
