@@ -1,31 +1,29 @@
 {
-    "manifest_version":3,
-    "name":"WebScope",
-    "version":"1.0",
-
-    "description":"calculates the readtime and also gives the number of external links and main headings of a webpage",
- 
-    "content_scripts":[
-        {
-            "matches":["<all_urls>"],
-            "js":["summarize.js","pageinfo.js"]
-        }
+    "name": "Webpage Info",
+    "version": "1.0",
+    "description": "Get webpage info",
+    "manifest_version": 2,
+    "permissions": [
+      "activeTab"
     ],
     "background": {
-        "scripts" : [
-            "summarize.js",
-            "pageinfo.js"
-        ]
+      "scripts": ["background.js"],
+      "persistent": false
     },
-    "action": {
-        "default_icon": {
-            "128":"fafa.jpg"
-        },
-        "default_title": "webscope",
-        "default_popup": "popup.html"
-      },
-    "permissions":["activeTab"]
 
-    
- 
-}
+    "icons": {
+        "16": "logo.jpg"
+      },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content-script.js"]
+      }
+    ],
+    "browser_action": {
+        "default_icon": "logo.jpg",
+      "default_title": "Get Webpage Info",
+      "default_popup": "popup.html"
+    }
+  }
+  
