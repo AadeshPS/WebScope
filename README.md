@@ -43,4 +43,5 @@ we use the following third-party libraries:
 
 - jQuery  
 
-WebScope is licensed under BSD 3-Clause "new" or "revised" license.
+WebScope is licensed under BSD 3-Clause "new" or "revised" license.  
+[VIDEO DEMO](https://www.youtube.com/watch?v=KdaXNovx1wE)
