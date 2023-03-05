@@ -1,4 +1,4 @@
-## WEBSCOPE 
+# WEBSCOPE 
 
 ---
 
@@ -10,4 +10,23 @@ Currently, there are a tonne of websites available for us to browse and read fro
 **WebScope**, the solution is really quite easy.
 It's a search engine addon that gives users access to basic webpage information including read time, major contents, and external links.By analysing these data in accordance with their priorities, users can choose the best suitable page.
 
-We will be giving the data to the user once we enter the website 
+## FEATURES
+- Estimated Read Time: Displays the estimated reading time of a webpage.  
+- Number of External Links: Shows the number of external links on a webpage and allows you know the scope of reading.  
+- Content Preview: Provides a preview of the content of a webpage, so you can decide if it's worth reading in full.
+
+## INSTALLATION
+Download the extension from the Mozilla Add-ons website or install it directly from the Firefox browser.  
+The extension will be usable once installation is finished.
+
+## USAGE
+- To view the estimated reading time, click the **WebScope** icon in the browser toolbar. The estimated read time will be displayed in a popup window.  
+- The number of external links in the webpage will be displayed in the toolbar.
+- The content of the webpage can also be seen in the toolbar.
+- The readtime is displayed in different colors which indicates the range of reading
+- The number of external links are also diplayed in different colors so that where each colour indicates different tiers of '***scope of reading***'
+## ACKNOWLEDGEMENTS AND LICENSING
+we use the following third-party libraries:
+
+- jQuery
+
