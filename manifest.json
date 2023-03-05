@@ -4,10 +4,6 @@
     "version":"1.0",
 
     "description":"adds red border",
-
-    "icons":{
-        "48":"icons/border-48.png"
-    },
  
     "content_scripts":[
         {
@@ -20,7 +16,15 @@
             "summarize.js",
             "pageinfo.js"
         ]
-    }
+    },
+    "action": {
+        "default_icon": {
+            "128":"fafa.jpg"
+        },
+        "default_title": "webscope",
+        "default_popup": "basic_window.html"
+      },
+    "permissions":["activeTab"]
 
     
  
