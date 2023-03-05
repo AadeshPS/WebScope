@@ -16,12 +16,12 @@ It's a search engine addon that gives users access to basic webpage information 
 ### The Beginning
 Everything starts with a spark.The majority of us rely on numerous websites to read and learn, but it might be challenging to select the most time- and content-efficient one. Hence, we resolve to discover a remedy!  
 ### Where we reached  
-Now we had build a mozilla extention that shows the estimated read time and number of external links in a particular website. This will help in providing the user an idea of how efficient the website is.
+Now we had build a mozilla extention that shows the estimated read time and number of external links in a particular website. This will help in providing the user an idea of how efficient the website is. The color of the reading time and quantity of external links indicates different tiers of reading time and scope of reading.
 ### how do we get here
 First we made an extension to mozilla. The extension is designed such that it will read a page and count its number of words. Based on the number of words we estimate the reading time. We also find the number of links in a page. we use javascript, HTML, CSS to reach here.
 ### what is working and not working!!
 The readtime and the quantity of links are both clearly displayed.  
-We also wished to add the content details as well as tiering the webpages into different levels based on readtime and quantity of external links, but we could not finish it due to time constraints.
+We also wished to add the content details , but we could not finish it due to time constraints.
 
 ## FEATURES
 - Estimated Read Time: Displays the estimated reading time of a webpage.  
@@ -37,7 +37,7 @@ The extension will be usable once installation is finished.
 - The number of external links in the webpage will be displayed in the toolbar.
 - The content of the webpage can also be seen in the toolbar.
 - The readtime is displayed in different colors which indicates the range of reading
-- The number of external links are also diplayed in different colors so that where each colour indicates different tiers of '***scope of reading***'
+- The number of external links are also displayed in different colors so that where each colour indicates different tiers of '***scope of reading***'
 ## ACKNOWLEDGEMENTS AND LICENSING
 we use the following third-party libraries:
 
